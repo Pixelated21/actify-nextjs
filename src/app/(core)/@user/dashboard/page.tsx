@@ -3,7 +3,7 @@ import {
 	BadgeCheck,
 	Calendar,
 	Clock,
-	MapPin,
+	MapPin,     
 	QrCode,
 	Trophy,
 	UserCircle,
@@ -13,11 +13,10 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export default function DashboardPage() {
-	// Mock data for prototype
+export default async function DashboardPage() {
 	const user = {
 		name: "Sarah Johnson",
-		points: 750,
+		points: 750,                                                
 		completedTasks: 12,
 		level: 3,
 	};
@@ -258,7 +257,7 @@ export default function DashboardPage() {
 									>
 										{/* Event header */}
 										<div className="p-3 border-b border-gray-100">
-											<div className="flex justify-between items-start">
+									    		<div className="flex justify-between items-start">
 												<div className="pr-2">
 													<h3 className="font-medium text-gray-900 break-words">
 														{event.title}

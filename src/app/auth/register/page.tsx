@@ -1,7 +1,7 @@
-import { LoginCard } from "@/app/auth/_components/login-card";
 import { AuthContainer } from "@/app/auth/_components/auth-container";
 import { createTitle } from "@/lib/utils";
 import type { Metadata } from "next";
+import RegisterCard from "../_components/register-card";
 
 export const metadata: Metadata = {
 	title: createTitle("Register"),
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default async function RegisterPage() {
 	return (
 		<AuthContainer>
-			<LoginCard />
+			<RegisterCard />
 		</AuthContainer>
 	);
 }

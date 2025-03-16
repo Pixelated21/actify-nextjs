@@ -30,7 +30,7 @@ export function AuthContainer({
 			<Link href={APP_ROUTES.Root}>
 				<Logo className="justify-center" />
 			</Link>
-			{children}
+			<div className="mt-10">{children}</div>
 		</div>
-	);
+	);	
 }
